@@ -29,6 +29,7 @@ This is the structure and few key functionality of the projects and there are po
 -  **Messgaes** : For communication between the users .
 -  **PROFILE** : Created when the useris registered and given an id . On login the user will et access to profile and Email    name can predefined and id can be used as unique key . Photos and bio are editable fields and secondary email is a 
    future plan .
+   **Responsive and reusable components**
 
 
 
@@ -102,3 +103,44 @@ if (error) {
     
  - **Databases**
  - Mock data is used , we can use Sql or NoSql according to the requirements.
+
+
+## Future improvements
+
+- Expand user roles with specific permissions.
+- UI corrects across the web
+- Refactoring of code components to make it work on functions and make more dynamic using same components and functions 
+  from servivce files .
+-  Implement SEO , lazy loading (integrate images as there are no images currently )
+-  More powerful implementation of protected routes and bug fixes like back button navigation fixes .
+-  Make role specific dynamic key functioanlity
+-  Calendar Enhancements: Add more interactive features, such as event reminders and scheduling.
+-  Profile Enhacements
+
+
+##Project architecture 
+
+The frontend of the Community Platform is built using React, which is responsible for rendering the user interface and managing user interactions. The React app follows a component-based architecture, with each component serving a distinct part of the application. It interacts with the backend via API calls (once implemented) or mock data stored in localStorage.
+
+Key Components:
+Auth Components: RegistrationForm, LoginForm, Profile
+Handles user authentication and profile management.
+Integrates Google OAuth for authentication.
+Dashboard Components: StudentDashboard, TutorDashboard, AdminDashboard
+Displays role-specific content based on user roles (student, tutor, admin).
+Pages: CommunityPage, Events, TeachingResources, Messages, Insights, ChatRoom, Classroom, Calendar
+Displays various sections of the platform, like community posts, events, and chat rooms.
+Layout Components: NavBar, Sidebar, DashboardLayout
+Provides common structure and navigation throughout the app.
+Frontend Flow:
+User Registration/Login: Handled by RegistrationForm and LoginForm components using form validation and authentication.
+Role-Based Content: Based on the authenticated user's role, they are redirected to their respective dashboards (StudentDashboard, TutorDashboard, AdminDashboard).
+Page Content: Users can navigate through various pages like CommunityPage, ChatRoom, Events, etc., based on their role.
+State Management: Utilizes React Context API to manage user authentication and role-based data.
+
+##Flow and Security Considerations
+User Authentication: The system will authenticate users with JWT (for stateless authentication) or OAuth via Google. This ensures that users can securely log in and access only the content relevant to their roles.
+
+Role-Based Access: Each route/component will check the user's role (admin, tutor, student) and render the appropriate UI. Unauthorized access will be redirected to an error page or login page.
+
+This structure ensures scalability, easy management, and the ability to add more features in the future as the platform grows.
