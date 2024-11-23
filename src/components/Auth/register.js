@@ -11,7 +11,7 @@ const RegistrationForm = () => {
   const [role, setRole] = useState('student'); // Default to student
 
   const onSubmit = (data) => {
-    console.log(data);
+ 
     // Handle registration logic (e.g., send data to your server)
 
     // After successful registration, navigate to the profile page
@@ -23,7 +23,7 @@ const RegistrationForm = () => {
   const password = watch('password'); // watch the password field
 
   const handleGoogleLogin = (response) => {
-    console.log("Google login response: ", response);
+  
     // Handle authentication with Google response
     navigate('/profile');
   };
