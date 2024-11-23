@@ -17,10 +17,13 @@ This is the structure and few key functionality of the projects and there are po
 -  **Teaching Resources**: Browse, bookmark, and review various teaching materials.
 -  **Chat Room**: Real-time chat functionality with threaded messages.
 -  **Calendar**: View upcoming events and important dates.
-- **Admin Capabilities**: Admins can manage users and content.
-- **Insights** : Admin can view the insights of the student and teacher , interactions and their news and messgaes and get 
-  the data for bteer buisness prespective (implemented in mvp-2)
-- 
+-  **Admin Capabilities**: Admins can manage users and content.
+-  **Insights** : Admin can view the insights of the student and teacher , interactions and their news and messgaes and get 
+   the data for bteer buisness prespective (implemented in mvp-2)
+-  **Classroom** : For tutors and Students to schedule or view classes/videos/tutorials
+-  **Messgaes** : For communication between the users .
+-  **PROFILE** : Created when the useris registered and given an id . On login the user will et access to profile and Email    name can predefined and id can be used as unique key . Photos and bio are editable fields and secondary email is a 
+   future plan .
 
 
 
