@@ -9,9 +9,8 @@
 This is the structure and few key functionality of the projects and there are potential improvements ad bug fixation need with refactoring code nad making a diffent data page or service file for proper Api handling .
 
 
-
 Key Features:
-- **User Authentication**: Google OAuth login and role-based access.
+- **User Authentication**: Google OAuth login and role-based access. 
 - **Dashboards**: Role-specific dashboards for students, tutors, and admins.
 - **Event Management**: View and register for events.
 - **Teaching Resources**: Browse, bookmark, and review various teaching materials.
@@ -24,22 +23,24 @@ Key Features:
 
 
 
-
-
-
-
-
-
-
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Setup Instructions
+
+1. Clone the repository:
+Use git commands to clone repo  git clone https://github.com/serii-singh/Community_Platform.git(THE LINK IN THE HTTPS)
+2. Install the dependencies:
+   Commnad :-  npm i
+3. Run the project
+   Commnad :-  npn start
+Also , Create a .env file in the root directory and add your Google OAuth client ID (optional for Google login):
+REACT_APP_GOOGLE_CLIENT_ID=your-google-client-id
+
 ## Available Scripts
-
 In the project directory, you can run:
-
 ### `npm start`
-
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
