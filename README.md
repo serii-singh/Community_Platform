@@ -11,12 +11,12 @@ This is the structure and few key functionality of the projects and there are po
 
 ## Key Features:
 
-- **User Authentication**: Google OAuth login and role-based access.       
-- **Dashboards**: Role-specific dashboards for students, tutors, and admins.
-- **Event Management**: View and register for events.
-- **Teaching Resources**: Browse, bookmark, and review various teaching materials.
-- **Chat Room**: Real-time chat functionality with threaded messages.
-- **Calendar**: View upcoming events and important dates.
+-  **User Authentication**: Google OAuth login and role-based access.       
+-  **Dashboards**: Role-specific dashboards for students, tutors, and admins.
+-  **Event Management**: View and register for events.
+-  **Teaching Resources**: Browse, bookmark, and review various teaching materials.
+-  **Chat Room**: Real-time chat functionality with threaded messages.
+-  **Calendar**: View upcoming events and important dates.
 - **Admin Capabilities**: Admins can manage users and content.
 - **Insights** : Admin can view the insights of the student and teacher , interactions and their news and messgaes and get 
   the data for bteer buisness prespective (implemented in mvp-2)
