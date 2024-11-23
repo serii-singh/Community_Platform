@@ -33,7 +33,6 @@ export const mockLogin = (email, password, requiredRole) => {
 
 export const getUserFromToken = () => {
   const storedUser = localStorage.getItem('user');
-  console.log(storedUser , "stroed user on auth util")
   if (storedUser) {
     return JSON.parse(storedUser);  // Return parsed user object from localStorage
   }
