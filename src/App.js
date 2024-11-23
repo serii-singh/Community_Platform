@@ -5,10 +5,10 @@ import LoginForm from './components/Auth/login';
 import Profile from './components/pages/profile';
 import { GoogleOAuthProvider } from '@react-oauth/google'; 
 import StudentDashboard from './components/dashboard/student';
-import TutorDashboard from './components/dashboard/tutor';  // Tutor Dashboard
-import AdminDashboard from './components/dashboard/admin';  // Admin Dashboard
+import TutorDashboard from './components/dashboard/tutor';  
+import AdminDashboard from './components/dashboard/admin'; 
 import { Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './context/AuthContext'; // Import AuthProvider
+import { AuthProvider, useAuth } from './context/AuthContext'; 
 import CommunityPage from './components/pages/community';
 import Card from './components/pages/card';
 import Error from './components/pages/error';
@@ -28,7 +28,7 @@ function App() {
 const ProtectedRoute = ({ element, requiredRole }) => {
   const user = JSON.parse(localStorage.getItem('user'));  // Retrieve the user data from localStorage
   // const { user } = useAuth();  // Use AuthContext hook to get user data
-  console.log(user ,"user app page")
+  
   if (!user) {
     // If there's no user in localStorage, redirect to login
     return <Navigate to="/login" />;
