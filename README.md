@@ -1,5 +1,37 @@
-# Getting Started with Create React App
+## Community Platform
 
+## Project Overview
+
+**Community Platform** is a web-based application designed to help students, tutors, and admins connect, collaborate, and manage learning activities. The platform offers role-based dashboards, event management, resources, and interactive chat rooms. It supports user authentication via Google OAuth and mock login functionality, allowing users to interact and manage their profiles according to their roles.
+
+## Additional Information
+
+This is the structure and few key functionality of the projects and there are potential improvements ad bug fixation need with refactoring code nad making a diffent data page or service file for proper Api handling .
+
+
+
+Key Features:
+- **User Authentication**: Google OAuth login and role-based access.
+- **Dashboards**: Role-specific dashboards for students, tutors, and admins.
+- **Event Management**: View and register for events.
+- **Teaching Resources**: Browse, bookmark, and review various teaching materials.
+- **Chat Room**: Real-time chat functionality with threaded messages.
+- **Calendar**: View upcoming events and important dates.
+- **Admin Capabilities**: Admins can manage users and content.
+- **Insights** : Admin can view the insights of the student and teacher , interactions and their news and messgaes and get 
+  the data for bteer buisness prespective (implemented in mvp-2)
+- 
+
+
+
+
+
+
+
+
+
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
