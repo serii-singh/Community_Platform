@@ -17,22 +17,13 @@ const LoginForm = () => {
 
     const onSubmit = async (data) => {
       const { email, password } = data;
-      console.log("Form data submitted: ", data);
+     
       
       // Call handleLogin from context to authenticate
       // const loginResult = await handleLogin(email, password, role);  // await for login response
       // console.log("Login result: ", loginResult);
   
-        // Check if the login was successful and navigate accordingly
-    // if (loginResult && !loginResult.error) {
-    //   if (user && user.role === 'admin') {
-    //     navigate('/admin');  // Admin dashboard
-    //   } else if (user && user.role === 'tutor') {
-    //     navigate('/tutor');  // Tutor dashboard
-    //   } else {
-    //     navigate('/student');  // Student dashboard
-    //   }
-    // }
+       
     await handleLogin(email, password, role);
 
     // Redirect based on the role after login
@@ -49,7 +40,7 @@ const LoginForm = () => {
 
   // Google login success handler
   const handleGoogleLogin = (response) => {
-    console.log("Google login response: ", response);
+ 
     // Handle authentication with Google response
     navigate('/profile');  // Redirect user to their profile
   };
