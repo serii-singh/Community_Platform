@@ -123,15 +123,16 @@ if (error) {
 The frontend of the Community Platform is built using React, which is responsible for rendering the user interface and managing user interactions. The React app follows a component-based architecture, with each component serving a distinct part of the application. It interacts with the backend via API calls (once implemented) or mock data stored in localStorage.
 
 Key Components:
-Auth Components: RegistrationForm, LoginForm, Profile
-Handles user authentication and profile management.
-Integrates Google OAuth for authentication.
-Dashboard Components: StudentDashboard, TutorDashboard, AdminDashboard
-Displays role-specific content based on user roles (student, tutor, admin).
-Pages: CommunityPage, Events, TeachingResources, Messages, Insights, ChatRoom, Classroom, Calendar
-Displays various sections of the platform, like community posts, events, and chat rooms.
-Layout Components: NavBar, Sidebar, DashboardLayout
-Provides common structure and navigation throughout the app.
+- Auth Components: RegistrationForm, LoginForm, Profile
+- Handles user authentication and profile management.
+- Integrates Google OAuth for authentication.
+-  Dashboard Components: StudentDashboard, TutorDashboard, AdminDashboard
+- Displays role-specific content based on user roles (student, tutor, admin).
+- Pages: CommunityPage, Events, TeachingResources, Messages, Insights, ChatRoom, Classroom, Calendar
+- Displays various sections of the platform, like community posts, events, and chat rooms.
+- Layout Components: NavBar, Sidebar, DashboardLayout
+- Provides common structure and navigation throughout the app.
+  
 Frontend Flow:
 User Registration/Login: Handled by RegistrationForm and LoginForm components using form validation and authentication.
 Role-Based Content: Based on the authenticated user's role, they are redirected to their respective dashboards (StudentDashboard, TutorDashboard, AdminDashboard).
