@@ -10,7 +10,8 @@ This is the structure and few key functionality of the projects and there are po
 
 
 ## Key Features:
-- **User Authentication**: Google OAuth login and role-based access. 
+
+- **User Authentication**: Google OAuth login and role-based access.       
 - **Dashboards**: Role-specific dashboards for students, tutors, and admins.
 - **Event Management**: View and register for events.
 - **Teaching Resources**: Browse, bookmark, and review various teaching materials.
@@ -87,8 +88,23 @@ if (error) {
 }
 
 ## Components:
-**Auth Components**: Handle user registration, login, and profile management.
-**Dashboard Components**: Manage dashboards for students, tutors, and admins.
-**Pages**: Represent different sections of the platform, such as the community page, events, chat rooms, and resources.
-**Layout Components**: Include common elements like navigation bars and sidebars.
-**Utils**: Includes helper functions for authentication
+-**Auth Components**: Handle user registration, login, and profile management.
+-**Dashboard Components**: Manage dashboards for students, tutors, and admins.
+-**Pages**: Represent different sections of the platform, such as the community page, events, chat rooms, and resources.
+-**Layout Components**: Include common elements like navigation bars and sidebars.
+-**Utils**: Includes helper functions for authentication.
+
+## Tech Stack
+
+- **Frontend:**
+  - **React**: For building the user interface.
+  - **Tailwind CSS**: For utility-first styling and responsive design.
+  - **React Router**: For client-side routing and navigation.
+  - **React Hook Form**: For form handling and validation.
+  - **@react-oauth/google**: For Google OAuth integration.
+
+- **Backend (for future development)**:
+  - Mock data and `localStorage` are currently used. The real backend will be implemented later.
+    
+ - **Databases**
+ - Mock data is used , we can use Sql or NoSql according to the requirements.
