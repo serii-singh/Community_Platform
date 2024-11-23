@@ -16,7 +16,6 @@ export const AuthProvider = ({ children }) => {
   // Load user data from localStorage when the app loads
   useEffect(() => {
     const storedUser = getUserFromToken();
-    console.log(storedUser , "user on context")
     if (storedUser) {
       setUser(storedUser);  // Set user from localStorage if available
     }
@@ -34,7 +33,6 @@ export const AuthProvider = ({ children }) => {
         setUser(null);     // Reset user state
         setLoading(false); // Set loading to false after login attempt
       } else {
-        console.log('Login successful, saving user to localStorage:', user);
         setUser(user);     // Set user data in state if login succeeds
         setError(null);    // Clear any previous errors
         localStorage.setItem('user', JSON.stringify(user)); // Store user data with role in localStorage
