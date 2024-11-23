@@ -11,8 +11,13 @@ This is the structure and few key functionality of the projects and there are po
 
 ## Key Features:
 
--  **User Authentication**: Google OAuth login and role-based access.       
--  **Dashboards**: Role-specific dashboards for students, tutors, and admins.
+-  **User Authentication**: Google OAuth login and role-based access.
+-  **Registration and Login** : Role based resitration and login access to user on the basis of which dashboard apperas . 
+      In addition , the tutaor registartion will follow a different journey after normal registatrion is future plans       
+-  **Dashboards**: Role-specific dashboards for students, tutors, and admins.Also , different roles will have different 
+    access to pages like only admin will view everything for now and tutors and students will not be ble to view features l 
+    like Insights etc and will be redirecte to 404 error/login for now. In further developments, user will not view the 
+    features which is unaccesible .
 -  **Event Management**: View and register for events.
 -  **Teaching Resources**: Browse, bookmark, and review various teaching materials.
 -  **Chat Room**: Real-time chat functionality with threaded messages.
