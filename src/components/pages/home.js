@@ -19,11 +19,11 @@ const Homepage = () => {
         comments: [
           {
             id: 1,
-            author: "John Doe",
+            author: "dummy name",
             text: "Great post!",
             replies: [
-              { id: 1, author: "Jane Doe", text: "I agree!" },
-              { id: 2, author: "Alice", text: "Absolutely!" },
+              { id: 1, author: "dummy name", text: "I agree!" },
+              { id: 2, author: "dummy name 2", text: "Absolutely!" },
             ],
           },
         ],
@@ -40,7 +40,7 @@ const Homepage = () => {
             author: "Bob",
             text: "Interesting!",
             replies: [
-              { id: 1, author: "Charlie", text: "I agree!" },
+              { id: 1, author: "dummy name3", text: "I agree!" },
             ],
           },
         ],
