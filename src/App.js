@@ -26,8 +26,8 @@ import AccountSettings from './components/pages/accountsettings';
 function App() {
   // ProtectedRoute component that checks if the user is authenticated and has the right role
 const ProtectedRoute = ({ element, requiredRole }) => {
-  const user = JSON.parse(localStorage.getItem('user'));  // Retrieve the user data from localStorage
-  // const { user } = useAuth();  // Use AuthContext hook to get user data
+  // const user = JSON.parse(localStorage.getItem('user'));  // Retrieve the user data from localStorage
+  const { user } = useAuth();  // Use AuthContext hook to get user data
   
   if (!user) {
     // If there's no user in localStorage, redirect to login
